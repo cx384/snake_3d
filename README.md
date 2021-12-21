@@ -1,4 +1,4 @@
-Snake 3d game for Minetest
+Snake 3D game for Minetest
 =====================
 The classical Snake game extended to 3 dimensions.
 
