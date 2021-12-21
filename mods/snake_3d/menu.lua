@@ -44,15 +44,12 @@ minetest.register_on_player_receive_fields(function(player, formname, fields)
 			return
 		end
 		
-		--[[ no multiplayer for now
 		local snake_list = minetest.deserialize(meta:get_string("snake_list"))
 		if snake_list then
 			for _,pos in ipairs(snake_list) do
 				minetest.set_node(pos, {name = "air"})
 			end
 		end
-		]]
-		snake_3d.set_world()
 		
 		snake_3d.start_snake(player)
 	end
